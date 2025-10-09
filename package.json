@@ -1,0 +1,19 @@
+{
+  "name": "kdp-collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy --input=src --output=dist",
+    "start": "npx @11ty/eleventy --serve --input=src --output=dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
