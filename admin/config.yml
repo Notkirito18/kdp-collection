@@ -27,3 +27,12 @@ collections:
         }
       - { label: "Cover Image", name: "cover", widget: "image" }
       - { label: "Amazon Link", name: "link", widget: "string" }
+        # Force layout front-matter so Eleventy knows how to render it
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layout.njk",
+        }
+      # Ensure tag so your collections.books picks it up
+      - { label: "Tags", name: "tags", widget: "list", default: ["books"] }
