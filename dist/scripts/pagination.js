@@ -180,4 +180,12 @@ document.addEventListener("DOMContentLoaded", function () {
   filtered = itemsData.slice();
   const initPage = getPageFromHash();
   showPage(initPage);
+
+  // Always start at top when the page first loads
+  window.addEventListener("load", () => {
+    // small timeout ensures it runs after layout/render
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "instant" || "auto" });
+    }, 0);
+  });
 });
