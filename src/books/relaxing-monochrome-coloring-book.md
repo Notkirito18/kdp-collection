@@ -1,17 +1,15 @@
 ---
 title: Relaxing Monochrome Coloring Book
-subtitle:
-  A Mindful Journey With Relaxing Comfy Patterns to Experiment Coloring in one
-  Color Black and White for All Ages, kids, young teens and adults
+subtitle: A Mindful Journey With Relaxing Comfy Patterns to Experiment Coloring
+  in one Color Black and White for All Ages, kids, young teens and adults
 description: >-
   Relaxing Monochromw Coloring Book invites you to slow down, breathe, and
   discover the beauty of simplicity.
 
-  Inside, you’ll find 32 single-sided pages of elegant black-and-white designs,
-  each created to calm the mind and inspire quiet reflection
+  Inside, you’ll find 32 single-sided pages of elegant black-and-white designs, each created to calm the mind and inspire quiet reflection
 cover: /images/6103cqylq2l._sl1293_.jpg
 link: https://www.amazon.com/dp/B0FTVJJ334
-printableLink: "https://drive.google.com/file/d/1JfZgPjqL8RE-lBRfHgc6w9aohRTVyPSv/view?usp=sharing"
+printableLink: https://drive.google.com/file/d/1uFmokxH6-Mb75Rqot6syuzyQo88mULxT/view?usp=sharing
 layout: layout.njk
 tags: books
 ---
