@@ -3,7 +3,18 @@ layout: layout.njk
 title: My KDP Books
 ---
 
-<section class="row g-4">
+<!-- Search bar -->
+<div class="mb-4">
+  <label for="book-search" class="visually-hidden">Search books</label>
+  <input
+    id="book-search"
+    type="search"
+    placeholder="Search books by title, subtitle or description..."
+    aria-label="Search books"
+    class="form-control search-input" />
+</div>
+
+<section class="row g-4" id="books-grid">
   {% for book in collections.books %}
   <article class="col-12 col-sm-6 col-md-4">
     <div class="card h-100 shadow-sm book-card">
@@ -15,11 +26,19 @@ title: My KDP Books
       </a>
 
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-1">{{ book.data.title }}</h5>
+        <a
+          href="{{ book.data.link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-title mb-1">
+          {{ book.data.title }}
+        </a>
         {% if book.data.subtitle %}
         <h6 class="card-subtitle mb-2 text-muted">{{ book.data.subtitle }}</h6>
         {% endif %} {% if book.data.description %}
-        <p class="card-text small mb-3">{{ book.data.description }}</p>
+        <p class="card-text small mb-3" title="{{ book.data.description }}">
+          {{ book.data.description | truncate(180) }}
+        </p>
         {% endif %}
 
         <div class="mt-auto">
@@ -36,3 +55,14 @@ title: My KDP Books
   </article>
   {% endfor %}
 </section>
+
+<!-- No results -->
+<div id="no-results" class="text-center my-4" style="display: none">
+  <p class="mb-0">No books found. Try another search.</p>
+</div>
+
+<!-- pagination placeholder (JS will populate this) -->
+<nav id="pagination" class="py-4" aria-label="Page navigation"></nav>
+
+<!-- load your pagination + search script -->
+<script src="/pagination.js" defer></script>

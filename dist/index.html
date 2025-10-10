@@ -15,20 +15,9 @@
   </head>
   <body>
     <!-- Hero -->
-    <section
-      class="hero text-white"
-      style="
-        background-image: url('/images/book-cover.jpg');
-        background-size: cover;
-        background-position: center;
-      ">
-      <div
-        style="
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.45);
-          z-index: 0;
-        "></div>
+    <section class="hero text-white">
+      <div class="overlay"></div>
+      <!-- overlay only on hero script -->
       <script>
         (function () {
           var parent =
@@ -53,20 +42,7 @@
               A collection of my published books on Kindle Direct Publishing
               (KDP).
             </p>
-            <a
-              href="#books_collection"
-              class="btn btn-lg"
-              style="
-                background: #f898a4;
-                color: #fff;
-                border: none;
-                box-shadow: none;
-                border-radius: 8px;
-                padding: 0.6rem 1.2rem;
-                text-decoration: none;
-                font-weight: 600;
-                display: inline-block;
-              "
+            <a href="#books_collection" class="btn btn-lg brows-btn"
               >Browse Books</a
             >
           </div>
@@ -86,7 +62,18 @@
 
     <main class="container mt-5" id="books_collection">
       
-<section class="row g-4">
+<!-- Search bar -->
+<div class="mb-4">
+  <label for="book-search" class="visually-hidden">Search books</label>
+  <input
+    id="book-search"
+    type="search"
+    placeholder="Search books by title, subtitle or description..."
+    aria-label="Search books"
+    class="form-control search-input" />
+</div>
+
+<section class="row g-4" id="books-grid">
   
   <article class="col-12 col-sm-6 col-md-4">
     <div class="card h-100 shadow-sm book-card">
@@ -98,12 +85,21 @@
       </a>
 
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-1">My First KDP Book</h5>
+        <a
+          href="https://www.amazon.com/dp/XXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-title mb-1">
+          My First KDP Book
+        </a>
         
         <h6 class="card-subtitle mb-2 text-muted">The first kdp book to ever exist on the internet</h6>
          
-        <p class="card-text small mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
-</p>
+        <p class="card-text small mb-3" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+
+        </p>
         
 
         <div class="mt-auto">
@@ -129,12 +125,21 @@
       </a>
 
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-1">My First KDP Book 2</h5>
+        <a
+          href="https://www.amazon.com/dp/XXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-title mb-1">
+          My First KDP Book 2
+        </a>
         
         <h6 class="card-subtitle mb-2 text-muted">The first kdp bo22ok to ever exist on the internet</h6>
          
-        <p class="card-text small mb-3">Lorem ipsum dolor sit amet 22consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
-</p>
+        <p class="card-text small mb-3" title="Lorem ipsum dolor sit amet 22consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+">
+          Lorem ipsum dolor sit amet 22consectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+
+        </p>
         
 
         <div class="mt-auto">
@@ -160,12 +165,21 @@
       </a>
 
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-1">My First KDP Book 4 </h5>
+        <a
+          href="https://www.amazon.com/dp/XXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-title mb-1">
+          My First KDP Book 4 
+        </a>
         
         <h6 class="card-subtitle mb-2 text-muted">The first kdp boo 4 k to ever exist on the internet</h6>
          
-        <p class="card-text small mb-3">Lorem ipsum dolor sit amet co 4 4 nsectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
-</p>
+        <p class="card-text small mb-3" title="Lorem ipsum dolor sit amet co 4 4 nsectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+">
+          Lorem ipsum dolor sit amet co 4 4 nsectetur adipisicing elit. Alias quas est doloribus eligendi dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+
+        </p>
         
 
         <div class="mt-auto">
@@ -191,12 +205,21 @@
       </a>
 
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-1">3 3 My First KDP Book</h5>
+        <a
+          href="https://www.amazon.com/dp/XXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card-title mb-1">
+          3 3 My First KDP Book
+        </a>
         
         <h6 class="card-subtitle mb-2 text-muted">The3 3  first kdp book to ever exist on the internet</h6>
          
-        <p class="card-text small mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligen33 di dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
-</p>
+        <p class="card-text small mb-3" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligen33 di dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas est doloribus eligen33 di dolores ipsam rem magnam, necessitatibus quod commodi neque a deserunt, rerum ut?
+
+        </p>
         
 
         <div class="mt-auto">
@@ -214,9 +237,21 @@
   
 </section>
 
+<!-- No results -->
+<div id="no-results" class="text-center my-4" style="display: none">
+  <p class="mb-0">No books found. Try another search.</p>
+</div>
+
+<!-- pagination placeholder (JS will populate this) -->
+<nav id="pagination" class="py-4" aria-label="Page navigation"></nav>
+
+<!-- load your pagination + search script -->
+<script src="/pagination.js" defer></script>
+
     </main>
 
     <!-- Bootstrap JS bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/pagination.js"></script>
   </body>
 </html>

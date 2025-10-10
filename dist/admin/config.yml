@@ -19,6 +19,13 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+          pattern:
+            ["/^.{0,180}$/", "Description must be 180 characters or fewer."],
+        }
       - { label: "Cover Image", name: "cover", widget: "image" }
       - { label: "Amazon Link", name: "link", widget: "string" }
