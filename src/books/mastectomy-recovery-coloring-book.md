@@ -9,6 +9,7 @@ description:
   thoughtful care-package gift."
 cover: /images/61-ps6bawfl._sl1293_.jpg
 link: https://www.amazon.com/dp/B0FKBLNS8P
+printableLink: "https://drive.google.com/file/d/1JfZgPjqL8RE-lBRfHgc6w9aohRTVyPSv/view?usp=sharing"
 layout: layout.njk
 tags: books
 ---

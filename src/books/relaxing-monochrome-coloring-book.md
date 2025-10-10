@@ -11,6 +11,7 @@ description: >-
   each created to calm the mind and inspire quiet reflection
 cover: /images/6103cqylq2l._sl1293_.jpg
 link: https://www.amazon.com/dp/B0FTVJJ334
+printableLink: "https://drive.google.com/file/d/1JfZgPjqL8RE-lBRfHgc6w9aohRTVyPSv/view?usp=sharing"
 layout: layout.njk
 tags: books
 ---

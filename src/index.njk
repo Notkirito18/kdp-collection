@@ -16,7 +16,7 @@ title: My KDP Books
 
 <section class="row g-4" id="books-grid">
   {% for book in collections.books %}
-  <article class="col-12 col-sm-6 col-md-4">
+  <article class="col-12 col-lg-4">
     <div class="card h-100 shadow-sm book-card">
       <a href="{{ book.data.link }}" target="_blank" rel="noopener noreferrer">
         <img
@@ -31,24 +31,36 @@ title: My KDP Books
           target="_blank"
           rel="noopener noreferrer"
           class="card-title mb-1">
-          {{ book.data.title }}
+          {{ book.data.title | truncate(70)  }}
         </a>
         {% if book.data.subtitle %}
-        <h6 class="card-subtitle mb-2 text-muted">{{ book.data.subtitle }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{ book.data.subtitle | truncate(145) }}
+        </h6>
         {% endif %} {% if book.data.description %}
         <p class="card-text small mb-3" title="{{ book.data.description }}">
           {{ book.data.description | truncate(180) }}
         </p>
         {% endif %}
-
-        <div class="mt-auto">
-          <a
-            href="{{ book.data.link }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-flat-orange btn-sm w-100">
-            View on Amazon
-          </a>
+        <div class="row">
+          <div class="col-6 mt-auto">
+            <a
+              href="{{ book.data.link }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-flat-orange btn-sm w-100">
+              View on Amazon
+            </a>
+          </div>
+          <div class="col-6 mt-auto">
+            <a
+              href="{{ book.data.printableLink }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-flat-orange btn-sm w-100">
+              Pritable Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
