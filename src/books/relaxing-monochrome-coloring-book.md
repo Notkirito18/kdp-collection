@@ -9,7 +9,7 @@ description: >-
   Inside, you’ll find 32 single-sided pages of elegant black-and-white designs, each created to calm the mind and inspire quiet reflection
 cover: /images/6103cqylq2l._sl1293_.jpg
 link: https://www.amazon.com/dp/B0FTVJJ334
-printableLink: https://drive.google.com/file/d/1uFmokxH6-Mb75Rqot6syuzyQo88mULxT/view?usp=sharing
+printableLink: https://drive.google.com/file/d/1GQ4Iv4CvkMYFCo9p6jid_1jf4ERx08BA/view?usp=sharing
 layout: layout.njk
 tags: books
 ---
