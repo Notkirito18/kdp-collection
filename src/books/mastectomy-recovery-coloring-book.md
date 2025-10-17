@@ -7,7 +7,7 @@ description: "Therapeutic mastectomy & recovery coloring book: 21 single-sided
   a thoughtful care-package gift."
 cover: /images/61-ps6bawfl._sl1293_.jpg
 link: https://www.amazon.com/dp/B0FKBLNS8P
-printableLink: https://drive.google.com/file/d/1uFmokxH6-Mb75Rqot6syuzyQo88mULxT/view?usp=sharing
+printableLink: https://drive.google.com/file/d/1sS2gsYFMcSOROJ7lQPSfHTPjhkUSsfou/view?usp=sharing
 layout: layout.njk
 tags: books
 ---
