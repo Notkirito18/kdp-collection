@@ -23,7 +23,7 @@ description: >
 
 
   Ready to transform office frustrations into relaxing laughs?
-cover: https://m.media-amazon.com/images/I/71J7V1Gc4BL._SL1293_.jpg
+cover: /images/capture-d’écran-2025-10-17-173440.png
 link: https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0FWR6RDRR
 printableLink: https://drive.google.com/file/d/1-qTDJ0UYp-f4NIY1quJCkzL42nYYE7ml/view?usp=sharing
 layout: layout.njk
